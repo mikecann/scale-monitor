@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log
+*.exe
+*.dll
+*.ico
+*.lnk
+build/
+dist/
+TestResults/
+coverage/
