@@ -32,10 +32,10 @@ function New-Object {
         $shortcut | Add-Member -MemberType ScriptMethod -Name Save -Value {
             Set-Content -LiteralPath $this.Path -Value 'fake shortcut'
             $state.SaveCount++
-        }.GetNewClosure()
+        }
         $state.Shortcuts[$path] = $shortcut
         return $shortcut
-    }.GetNewClosure()
+    }
     return $shell
 }
 
